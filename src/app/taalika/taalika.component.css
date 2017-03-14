@@ -1,0 +1,43 @@
+.taalika-body{
+    background: #eee;
+    width: 100%;
+    font-family: 'Segoe UI';
+    font-size: 0.9em;
+    
+}
+.taalika-body-main{
+    overflow: auto;
+    height: 200px;
+}
+
+.taalika-top-bar{
+    text-align: center;
+}
+.taalika-header-row{
+    width: 100%;
+    display: flex;
+    background: #ddd;
+}
+.taalika-header-cell{
+    width: 100%;
+    border-right:solid thin #444;
+    padding: 3px 10px;
+    font-size: 1em;
+    min-width: 150px;
+}
+.taalika-header-cell:last-of-type{
+    border: none;
+}
+.taalika-row{
+    display: flex;
+}
+.taalika-cell{
+    width: 100%;
+    border-right:dotted thin #444;
+    padding: 3px 10px;
+    min-width: 150px;
+    word-wrap: break-word;
+}
+.taalika-cell:last-of-type{
+    border: none;
+}

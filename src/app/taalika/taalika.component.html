@@ -1,0 +1,22 @@
+<div class="taalika-body">
+    <div class="taalika-top-bar" *ngIf="topBarVisibility">
+        taalika-top-bar
+    </div>
+    <div class="taalika-header-row">
+        <div class="taalika-header-cell" *ngFor="let verticalBar of verticalBars">
+            {{verticalBar.headerName}}
+        </div>
+    </div>
+    <div class="taalika-body-main">
+
+        <div class="taalika-row" *ngFor="let horizontalBar of data">
+            <div class="taalika-cell" *ngFor="let verticalBar of verticalBars">
+                {{horizontalBar[verticalBar.name]}}
+            </div>
+        </div>
+    </div>
+
+    <div class="taalika-bottom-bar" *ngIf="bottomBarVisibility">
+        taalika-bottom-bar
+    </div>
+</div>
